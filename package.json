@@ -1,0 +1,43 @@
+{
+  "name": "sauce-demo-automation",
+  "version": "1.0.0",
+  "description": "Complete Playwright automation framework for Sauce Demo with TypeScript and Page Object Model",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:login": "playwright test tests/specs/login/login.spec.ts",
+    "test:products": "playwright test tests/specs/products/product.spec.ts",
+    "test:cart": "playwright test tests/specs/cart/cart.spec.ts",
+    "test:checkout": "playwright test tests/specs/checkout/checkout.spec.ts",
+    "test:edge": "playwright test tests/specs/edgecases/edgecases.spec.ts",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:mobile": "playwright test --project=\"Mobile Chrome\"",
+    "test:all": "playwright test --project=chromium --project=firefox --project=webkit --project=\"Mobile Chrome\"",
+    "report": "playwright show-report",
+    "trace": "playwright show-trace",
+    "codegen": "playwright codegen https://www.saucedemo.com/",
+    "install-browsers": "playwright install",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "saucedemo",
+    "typescript"
+  ],
+  "author": "QA Automation Engineer",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.5.0",
+    "typescript": "^5.6.3"
+  }
+}
+
