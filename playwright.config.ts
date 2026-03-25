@@ -24,7 +24,7 @@ export default defineConfig({
 
   // Comprehensive reporting
   reporter: [
-    ['html', { open: 'never' }],
+    ['html', { outputFolder: './test-results/html-report', open: 'never' }],
     ['junit', { outputFile: './test-results/junit-report.xml' }],
     ['json', { outputFile: './test-results/test-results.json' }],
     ['list'],
